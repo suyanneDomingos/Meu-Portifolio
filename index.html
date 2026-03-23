@@ -1,55 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Suyanne Domingos</title>
 </head>
 <body>
+
     <nav class="navegacao">
         <ul>
-            <li href="#inicio">Inicio</li>
-        </ul>
-          <ul>
-            <li href="#sobre">Sobre</li>
-        </ul>
-          <ul>
-            <li href="#projetos">Projetos</li>
-        </ul>
-          <ul>
-            <li href="#contato">Contato</li>
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contato" class="menu-link">Contato</a></li>
         </ul>
     </nav>
 
     <main id="inicio" class="cabecalho">
         <div>
-            <img src="./img/Suyanne.jpg" alt="Eu!!">
-            <h2> Suyanne Domingos</h2>
-            <h2>Desenvolvedor Back-End</h2>
+            <img src="./img/Suyanne.jpg" alt="Foto de Suyanne" class="foto-perfil">
+            <h1>Suyanne Domingos</h1>
+            <p class="cabecalho-sub-titulo">Desenvolvedora Back-End</p>
         </div>
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre mim</h2>
         <div class="sobre-caixa">
-            <p class="sobre-paragrafo"> Depois eu escrevo aqui</p>
+            <p class="sobre-paragrafo">Depois eu escrevo aqui</p>
         </div>
     </section>
 
     <section id="projetos" class="projetos">
-        <h2 class="projetos">Projetos</h2>
-         <div class="projetos-caixa">
+        <h2 class="projetos-titulo">Projetos</h2>
+
+        <div class="projetos-caixa">
+
             <div class="projetos-card">
-                    <img src="img/projeto1.jpg" alt="Projeto 1" class="projetos-imagem">
-                    <h3 class="info-projetos">projeto 1</h3>
-                    <p class="paragrafo-projetos"></p>
-            <div class="projetos-card">
-                    <img src="img/projeto2.jpg" alt="Projeto 2" class="projetos-imagem">
-                    <h3 class="info-projetos">projeto 2</h3>
-                    <p class="paragrafo-projetos"></p> 
-                </div>
+                <img src="img/projeto1.jpg" alt="Projeto 1" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 1</h3>
+                <p class="paragrafo-projetos"></p>
             </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto2.jpg" alt="Projeto 2" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 2</h3>
+                <p class="paragrafo-projetos"></p> 
+            </div>
+            
+            <div class="projetos-card">
+                <img src="img/projeto3.jpg" alt="Projeto 3" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 3</h3>
+                <p class="paragrafo-projetos"></p> 
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto4.jpg" alt="Projeto 4" class="projetos-imagem">
+                <h3 class="info-projetos">Projeto 4</h3>
+                <p class="paragrafo-projetos"></p> 
+            </div>
+
         </div>
     </section>
+
+    <section id="contato" class="contatos">
+        <h2 class="contatos-titulo">Contato</h2>
+
+        <form class="formulario-contato" id="formulario">
+            <div class="grupo-form">
+                <input type="text" placeholder="Nome" class="campo-form" required>
+            </div>
+
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="text-form" required></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
